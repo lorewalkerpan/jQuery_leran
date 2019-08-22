@@ -1,1 +1,1 @@
-记录学习jquery
+记录学习jquery基础知识
