@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<!--
+  目前focus选择器好像有问题，在不同浏览器上效果不一致，不清楚是不是我jQuery版本问题
+-->
+<head>
+  <meta charset="utf-8">
+  <title>聚焦选择器</title>
+  <script src="D:\web\jquery-demo\jquery\jquery-3.4.1.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("input:focus").addClass('focused');
+    })
+  </script>
+  <style type='text/css'>
+    input {
+      padding-left: 8px;
+      font: 400 13px/1.2em 'Courier New';
+    }
+
+    .focused {
+      background: #E9B;
+      color: #000;
+      outline: none;
+    }
+  </style>
+</head>
+
+<body>
+  <form id='formDemo'>
+    <input type='text' value='user' autofocus='off' />
+    <input type='password' value='password' autofocus='off' />
+  </form>
+</body>
+
+</html>

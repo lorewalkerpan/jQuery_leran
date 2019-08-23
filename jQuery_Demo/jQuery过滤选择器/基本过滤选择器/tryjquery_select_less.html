@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>less选择器</title>
+  <script src="D:\web\jquery-demo\jquery\jquery-3.4.1.min.js">
+  </script>
+  <script>
+    $(document).ready(function () {
+      $("tr:lt(-1)").css("background-color", "yellow");
+    });
+    //索引下标从0开始
+    //-1代表从后往前数的第一个，就是除最后一行其余全部为黄色背景样式
+  </script>
+</head>
+
+<body>
+
+  <h1>欢迎访问我的主页</h1>
+
+  <table border="1">
+    <tr>
+      <th>网站名</th>
+      <th>网址</th>
+    </tr>
+    <tr>
+      <td>Google</td>
+      <td>http://www.google.com</td>
+    </tr>
+    <tr>
+      <td>Baidu</td>
+      <td>http://www.baidu.com</td>
+    </tr>
+    <tr>
+      <td>GitHub</td>
+      <td>https://github.com/</td>
+    </tr>
+    <tr>
+      <td>淘宝</td>
+      <td>http://www.taobao.com</td>
+    </tr>
+    <tr>
+      <td>Facebook</td>
+      <td>http://www.facebook.com</td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
