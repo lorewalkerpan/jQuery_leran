@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>紧随同辈选择器</title>
+    <script src="D:\web\jquery-demo\jquery\jquery-3.4.1.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("h4+div").css("background-color", "yellow");
+        });
+    //同代选择器，可以选择紧跟着指定元素后面的元素
+    //注意是紧随，如何后面有多个同级的元素还是只取第一个
+    </script>
+</head>
+
+<body>
+
+    <h2>$("div span") 会选取什么元素?</h2>
+
+    <h4>这个 div 元素有两个父后代元素 p 和 span:</h4>
+    <div style="border:1px solid black;padding:10px;">
+        <p>这是一个段落</p>
+        <span>这是在 span 元素中的文本</span>
+    </div>
+
+    <h4>这个 div 元素也有两个父后代元素 p 和 span:</h4>
+    <div style="border:1px solid black;padding:10px;">
+        <p>这是一个段落 <span>这个 span 元素在 p 标签里面 </span></p>
+    </div>
+    <div style="border:1px solid black;padding:10px;">
+        <p>还是一个段落 <span>这个 span 元素在 p 标签里面 </span></p>
+    </div>
+</body>
+
+</html>
