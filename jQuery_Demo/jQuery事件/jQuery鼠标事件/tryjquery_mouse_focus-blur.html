@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>jQuery元素获得和失去焦点事件</title> 
+<script src="D:\web\jquery-demo\jquery\jquery-3.4.1.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color","#cccccc");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","#ffffff");
+  });
+});
+</script>
+</head>
+<body>
+
+Name: <input type="text" name="fullname"><br>
+Email: <input type="text" name="email">
+
+</body>
+</html>

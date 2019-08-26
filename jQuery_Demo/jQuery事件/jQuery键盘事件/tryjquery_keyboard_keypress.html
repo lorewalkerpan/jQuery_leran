@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>jQuery键盘按住事件</title> 
+<script src="D:\web\jquery-demo\jquery\jquery-3.4.1.min.js">
+</script>
+<script>
+i=0;
+$(document).ready(function(){
+  $("input").keypress(function(){
+    $("span").text(i+=1);
+  });
+});
+//keypress键盘一秒的触发次数与很多因素有关，包括键盘按键延迟等等
+//keypress指的是按住键盘按键之后不断出发的事件，ctrl、shift、alt、windows等键除外
+</script>
+</head>
+<body>
+
+输入你的名字: <input type="text">
+<p>按键的次数: <span>0</span></p>
+
+</body>
+</html>

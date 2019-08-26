@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery文档加载事件</title>
+    <script src="https://cdn.staticfile.org/jquery/2.0.0/jquery.min.js">
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("img").load(function () {
+                alert("图片已载入");
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1566808217385&di=2306cadc20cfccae01ad514c97ed9b38&imgtype=0&src=http%3A%2F%2Fwww.taiwan.cn%2Ftp%2Frw%2F201712%2FW020171228372150941064.jpg" alt="图片文字描述" width="304" height="236">
+    <p><b>注意:</b> 这个事件在不同浏览器效果有所不同，如果图片已缓存该事件则不会触发。</p>
+
+</body>
+
+</html>

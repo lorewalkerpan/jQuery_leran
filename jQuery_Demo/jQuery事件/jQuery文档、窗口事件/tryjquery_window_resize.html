@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>jQuery窗口调整事件</title>
+    <script src="D:\web\jquery-demo\jquery\jquery-3.4.1.min.js">
+    </script>
+    <script>
+        x = 0;
+        $(document).ready(function () {
+            $(window).resize(function () {
+                $("span").text(x += 1);
+            });
+        });
+    </script>
+</head>
+
+<body>
+
+    <p>窗口重置了 <span>0</span> 次大小。</p>
+    <p>尝试重置窗口大小。</p>
+
+</body>
+
+</html>
